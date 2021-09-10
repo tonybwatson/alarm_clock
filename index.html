@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital alarm clock</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <!-- sound effect for alarm -->
+    <audio id="alertSound" src="sound_effects/MGS Alert.mp3" preload="auto"></audio>
+    <!-- space for the time -->
+    <p><span id="time"></span></p>
+    <!-- button for alarm -->
+    <button onclick="setTimeout(alarm, 600000)">TEN MINUTE ALARM</button>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
