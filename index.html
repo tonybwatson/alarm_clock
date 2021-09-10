@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital alarm clock</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <!-- sound effect for alarm -->
-    <audio id="alertSound" src="sound_effects/MGS Alert.mp3" preload="auto"></audio>
+    <audio id="alertSound" src="sound_effects/80s_alarm_sound.mp3" preload="auto"></audio>
+    
     <!-- space for the time -->
+    <div id="border">
     <p><span id="time"></span></p>
-    <!-- button for alarm -->
-    <button onclick="setTimeout(alarm, 600000)">TEN MINUTE ALARM</button>
+    <!-- buttons for alarm -->
+        <div id="buttons">
+            <button id="eightHour">EIGHT HOUR ALARM</button>
+            <button id="tenMinute">TEN MINUTE ALARM</button>
+            <button id="tenSecond">TEN SECOND ALARM</button>
+        </div>
+    </div>
+
+    <!-- <h6>Alarm rings daily at 6:00</h6> -->
 
     <script src="./js/main.js"></script>
 </body>

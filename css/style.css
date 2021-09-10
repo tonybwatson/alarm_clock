@@ -8,44 +8,66 @@
 }
 
 /* Color scheme: 
-Rufous - #A71906
-Black - #000000 */
+Rufous (main) - #A71906
+Blood red (shadows) - #620F04
+Black (background) - #000000 */
 
 /* make background black */
 body {
     background-color: #000000;
-}
+    }
 
+/* make button more round, give red glow, red background, size */
 button {
     border-radius: 25px;
-    box-shadow: 0 0 25px #A71906;;
+    box-shadow: 5px 3px 6px #630f04;;
     background-color: #A71906;
-    display: block;
+    display: inline-block;
+    height: 2em;
 }
 
-p {
-    font-size: 10em;
-    text-align: center;
-    font-weight:normal;
-    font-style:normal;
-    color: #A71906;
-    text-shadow: 0 0 25px #A71906;
-}
-
-p, button {
-    margin: auto;
+/* adjust font of p, button, h6 */
+button, p, h6 {
     font-family: "alarm_clockregular", Arial, sans-serif;
 }
+html {
+    margin: auto;
+}
 
+/* bigger font on p, color change, text shadow  */
+p {
+    font-size: 10em;
+    display: inline;
+    margin-left: .2em;
+    /* text-align: center; */
+}
+
+h6, p {
+    text-align: center;
+    color: #A71906;
+    text-shadow: 10px 10px 8px #630F04;
+}
+
+/* blinking : animation */
 .blink {
     animation: 1s infinite blink;
 }
-
 @keyframes blink {
     50% {
         opacity: 0;
     }
     100% {
-        opacity: 1;
+        opacity: .9;
     }
 }
+
+/* border around outside of  */
+#border {
+    border-style: double;
+    border-color: #a71906;
+    box-shadow: 5px 5px 10px #630f04;
+    width: 70%;
+    margin: 50px;
+}
+
+
