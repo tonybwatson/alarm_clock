@@ -1,5 +1,3 @@
-let btn = document.querySelector('button')
-
 function updateTime() {
     // create variable for new Date to pull date/time info
     var date = new Date();
@@ -30,7 +28,7 @@ function updateTime() {
     var currentTime = `${hour}<span class="blink">:</span>${minute}<span class="blink">:</span>${second}`;
 
     // display time in 'time' in HTML
-    document.getElementById('time').innerHTML=currentTime
+    document.getElementById('time').innerHTML=currentTime;
 }
 
 // update updateTime every second, continuous
@@ -48,12 +46,12 @@ var tenMinute = document.getElementById('tenMinute');
 var tenSecond = document.getElementById('tenSecond');
 
 // function calls for alarms
-eightHour.onclick = setTimeout(alarm, 28800000);
-tenMinute.onclick = setTimeout(alarm, 60000);
-tenSecond.onclick = setTimeout(alarm, 10000);
-
+eightHour.onclick = function () {setTimeout(alarm, 28800000);}
+tenMinute.onclick = function () {setTimeout(alarm, 600000);}
+tenSecond.onclick = function () {setTimeout(alarm, 10000);}
 
 // specific time of day alarm goes here
-// if (hour === 15 && minute === 30 && second === 0) {
+// if (hour === 17 && minute === 30 && second === 0) {
 //     alarm();
 // }
+
